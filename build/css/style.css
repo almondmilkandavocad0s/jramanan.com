@@ -548,6 +548,8 @@ video {
   height: auto;
 }
 
+
+
 /* Make elements with the HTML hidden attribute stay hidden by default */
 
 [hidden]:where(:not([hidden="until-found"])) {
@@ -1246,6 +1248,39 @@ video {
 .group:focus-visible .group-focus-visible\:text-cyan-200 {
   --tw-text-opacity: 1;
   color: rgb(165 243 252 / var(--tw-text-opacity));
+}
+
+/* Custom styles for the shine effect */
+.shine-effect {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px; /* Size of the shine */
+    height: 300px; /* Size of the shine */
+    /* Subtle green/cyan hue for the mouse shine */
+    background: radial-gradient(circle at center, rgba(0, 255, 145, 0.15) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none; /* Allow interaction with elements beneath */
+    transform: translate(-50%, -50%); /* Center the shine on the cursor */
+    transition: opacity 0.3s ease-out; /* Smooth fade for opacity */
+    opacity: 0; /* Hidden by default */
+    z-index: 9999; /* Ensure it's on top */
+    filter: blur(50px); /* Soften the edges */
+}
+
+/* Custom scrollbar for better aesthetics on dark theme */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #1a1a1a; /* Darker track */
+}
+::-webkit-scrollbar-thumb {
+    background: #00ff91; /* Vibrant green thumb */
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #00e682; /* Slightly darker on hover */
 }
 
 @media (prefers-reduced-motion: reduce) {
