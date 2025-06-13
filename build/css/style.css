@@ -824,6 +824,10 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
 }
+.bg-slate-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+}
 
 .bg-cyan-500 {
   --tw-bg-opacity: 1;
@@ -833,6 +837,11 @@ video {
 .bg-cyan-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(34 211 238 / var(--tw-bg-opacity));
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-tr {
@@ -922,6 +931,41 @@ video {
   --tw-gradient-to: #111827 var(--tw-gradient-to-position);
 }
 
+/* Styles for timeline markers (reverted to circles) */
+.timeline-marker {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink-0;
+  z-index: 10;
+  background: #00ff91; /* Solid background for the circle */
+  border-radius: 50%;
+  border: 2px solid white; /* Keeping the white border */
+}
+
+.timeline-marker .pulse-effect {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: linear-gradient(to bottom right, #00ff91, #00ffc3);
+  opacity: 0.75;
+  animation: pulse 2s infinite cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+@keyframes pulse {
+  0%, 100% {
+      transform: scale(1);
+      opacity: 0.75;
+  }
+  50% {
+      transform: scale(1.2);
+      opacity: 0.2;
+  }
+}
+
 .object-contain {
   -o-object-fit: contain;
      object-fit: contain;
@@ -994,6 +1038,10 @@ video {
 
 .font-sans {
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.font-serif {
+  font-family: ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
 }
 
 .text-4xl {
@@ -1108,7 +1156,18 @@ video {
   --tw-text-opacity: 1;
   color: rgb(148 163 184 / var(--tw-text-opacity));
 }
+.text-slate-100 {
+  --tw-text-opacity: 1;
+  color: rgb(241 245 249 / var(--tw-text-opacity, 1));
+}
+.text-slate-50 {
+  --tw-text-opacity: 1;
+  color: rgb(248 250 252 / var(--tw-text-opacity, 1));
+}
+.text-white	{
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 
+}
 .text-emerald-400 {
   --tw-text-opacity: 1;
   color: rgb(52 211 153 / var(--tw-text-opacity));
@@ -1255,17 +1314,17 @@ video {
     position: fixed;
     top: 0;
     left: 0;
-    width: 300px; /* Size of the shine */
-    height: 300px; /* Size of the shine */
+    width: 1000px; /* Size of the shine */
+    height: 800px; /* Size of the shine */
     /* Subtle green/cyan hue for the mouse shine */
-    background: radial-gradient(circle at center, rgba(0, 255, 145, 0.15) 0%, transparent 70%);
-    border-radius: 50%;
+    background: radial-gradient(circle at center, rgba(15, 145, 0, 0.336) 0%, transparent 80%);
+    border-radius: 100%;
     pointer-events: none; /* Allow interaction with elements beneath */
     transform: translate(-50%, -50%); /* Center the shine on the cursor */
     transition: opacity 0.3s ease-out; /* Smooth fade for opacity */
     opacity: 0; /* Hidden by default */
     z-index: 9999; /* Ensure it's on top */
-    filter: blur(50px); /* Soften the edges */
+    filter: blur(200px); /* Soften the edges */
 }
 
 /* Custom scrollbar for better aesthetics on dark theme */
