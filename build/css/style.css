@@ -801,6 +801,10 @@ video {
 .bg-green-400\/10 {
   background-color: rgb(74 222 128 / 0.1);
 }
+.bg-pink-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(219, 39, 119 / var(--tw-bg-opacity));
+}
 
 .bg-indigo-500 {
   --tw-bg-opacity: 1;
@@ -931,7 +935,28 @@ video {
   --tw-gradient-to: #111827 var(--tw-gradient-to-position);
 }
 
+.skill-set-link {
+  font-weight: 600; /* Semi-bold */
+  text-decoration: none; /* No underline */
+  display: inline-flex; /* Allows text and SVG to sit side-by-side */
+  align-items: center; /* Vertically aligns text and SVG */
+  transition: color 0.3s ease; /* Smooth transition for hover */
+}
 
+.skill-set-link:hover {
+  text-decoration: underline;
+}
+
+/* Styling for the SVG arrow */
+.skill-set-link svg {
+  margin-left: 8px; /* Space between text and arrow */
+  vertical-align: middle; /* Align arrow with text baseline */
+  transition: transform 0.3s ease; /* Smooth transition for hover */
+}
+
+.skill-set-link:hover svg {
+  transform: translateX(3px); /* Slight movement to the right on hover */
+}
 
 .object-contain {
   -o-object-fit: contain;
