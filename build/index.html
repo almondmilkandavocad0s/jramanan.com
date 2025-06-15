@@ -8,10 +8,10 @@
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" xintegrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0x30z6Q2EqVlJmYfW1g7C/wXn5k8n4v1R2h2P+A1W1l1zF/v4Q2YyA8w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="min-h-screen bg-slate-950 justify-start">
+<body class="min-h-screen bg-black justify-start">
     <div id="shine" class="shine-effect"></div>
     <div class="sticky bg-black">
-        <div class="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
+        <div class="mx-auto px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
             <div class="lg:flex lg:justify-between lg:gap-4">
                 <header class="m-10 font-sans lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
                     <div>
@@ -90,37 +90,203 @@
                 </header>
                 <main class="pt-24 lg:w-1/2 lg:py-24">
                     <section id = "code_data" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24" aria-label="professional">
-                        <div class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-indigo-950/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0s">
+                        <div class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-black/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0s">
                             <h2 class="text-green-400 uppercase font-bold text-sm"> 
                                 CODE + DATA = <span class="text-white font-semibold">ME</span>
                             </h2>
                         </div>
-                        <p class="flex-wrap text-white font-light leading-relaxed">
-                            I am a <span class="text-slate-200 font-bold">seasoned techie</span> with a passion for data and technology<span class="text-green-400">.</span>
-                            My expertise lies at the intersection of <span class="text-slate-200 font-bold">data analysis, visualization, and software development</span>, where I leverage my skills to create impactful solutions that drive informed decision-making.
-                            I thrive on the challenge of transforming complex data into actionable insights, and I am dedicated to fostering collaboration across academia through my work in learning analytics.
-                            <br class="mt-5">
-                            My journey has been shaped by a diverse range of experiences, from developing transformative software solutions in the insurance industry to mentoring and guiding students as a teaching assistant during my grad school. 
-                            I have a <span class="text-slate-200 font-bold">Master's degree in Computer Science</span> from the <span class="text-slate-200 font-bold"> University of Nebraska-Lincoln</span> , where I honed my skills in data analysis and software development.
-                            I have also contributed to research publications, showcasing my commitment to advancing knowledge in the field.
-                            I am committed to continuous learning and growth, always seeking new opportunities to expand my knowledge and skills in the ever-evolving field of data and AI.
+                        <p class="flex-row text-justify text-white font-light text-sm font-mono leading-relaxed">
+                            I am a <span class="text-green-400 font-bold">seasoned techie</span> with a passion for data and technology<span class="text-green-500">.</span>
+                            My expertise lies at the intersection of <span class="text-green-400 font-bold">data analysis, visualization, and software development,</span> where I leverage my skills to create impactful solutions that drive informed decision-making<span class="text-green-500">.</span>
+                            I thrive on the challenge of transforming complex data into actionable insights<span class="text-green-500">,</span> and I am dedicated to fostering collaboration across academia through my work in learning analytics<span class="text-green-500">.</span>
+                            <br class="mt-5"><br>
+                            
+                            My journey has been shaped by a diverse range of experiences<span class="text-green-500">,</span> from developing transformative software solutions in the insurance industry to mentoring and guiding students as a teaching assistant during my grad school<span class="text-green-500">.</span> 
+                            I have a <span class="text-green-400 font-bold">Master's degree in Computer Science</span> from the <span class="text-green-400 font-bold"> University of Nebraska-Lincoln,</span> where I honed my skills in data analysis and software development.
+                            I have also contributed to <span class="text-green-400 font-bold">research publications</span><span class="text-green-500">,</span> showcasing my commitment to advancing knowledge in the field<span class="text-green-500">.</span><br><br>
+                            
+                            I am committed to continuous learning and growth<span class="text-green-500">,</span> always seeking new opportunities to expand my knowledge and skills in the ever-evolving field of data and AI<span class="text-green-500">.</span>
                         </p>
                         <div class="mx-auto relative mt-20 w-full text-white">
-                            <h2 class = "uppercase font-bold text-slate-400">My Journey</h2>
+                            <h2 class = "uppercase font-bold text-slate-400 font-mono">My Journey</h2>
+                            <div class="mx-auto mt-10 relative w-full text-white">
+                                <div class="space-y-6 relative">
+                                    <!-- Vertical line for the timeline, positioned absolutely -->
+                                    <div class="timeline-vertical-line"></div>
+
+                                    <!-- Each div below represents a single timeline item -->
+
+                                    <!-- Timeline Item: Learning Analyst -->
+                                    <div class="flex items-start relative z-10">
+                                        <div class="timeline-dot"></div> <!-- Dot for the timeline item -->
+                                        <div class="p-4 transition-all duration-300 ease-in-out
+                                                hover:bg-green-400/10  hover:-translate-y-0.5
+                                                rounded-lg flex-grow ml-6"> <!-- Adjusted margin-left to make space for the dot -->
+                                            <p class="font-medium text-xs text-slate-300 font-mono uppercase">
+                                            Sep 2019 - Present
+                                            </p>
+                                            <a href="https://nebraska.edu/" target="_blank">
+                                                <span class="font-bold text-slate-400 hover:text-green-400 font-mono uppercase">
+                                                    Learning Analyst @ University of Nebraska System
+                                                </span>
+                                            </a>
+                                            <ul class="mt-2 mb-3 text-justify justify-self-stretch text-sm list-disc pl-4 font-mono">
+                                                <li class="mb-1">
+                                                    <span class="text-green-400">Drove data-driven decisions</span> by modeling student performance and behavior related data marts and dashboards across 10+ projects.
+                                                </li>
+                                                <li class="mb-1">
+                                                    <span class="text-green-400">Pioneered the <a href="https://analytics.unl.edu/">"Course Insights"</a> LTI product</span> as the primary analyst from concept to launch.
+                                                </li>
+                                                <li class="mb-1">
+                                                    Recognized with the <span class="text-green-400">highest performance rating ("Exceeds Expectations")</span>  during the evaluation term (Feb 2022-Feb 2023).
+                                                </li>
+                                                <li class="mb-1">
+                                                    <span class="text-green-400">Facilitated cross-institutional collaboration</span> through regular presentations to NU System, BTAA, and Unizin peers.
+                                                </li>
+                                            </ul>
+                                            <ul class="mt-3 flex flex-wrap uppercase font-light font-mono gap-1 mb-3" aria-label="tech used">
+                                                <li class="mr-1 mt-1 font-bold"><div class="flex items-center rounded-full bg-green-400/10 px-3 py-1 text-xs font-light leading-1 text-green-500">Tableau</div></li>
+                                                <li class="mr-1 mt-1"><div class="flex items-center rounded-full bg-green-400/10 px-3 py-1 text-xs font-light leading-1 text-green-500">R programming</div></li>
+                                                <li class="mr-1 mt-1"><div class="flex items-center rounded-full bg-green-400/10 px-3 py-1 text-xs font-light leading-1 text-green-500">Python</div></li>
+                                                <li class="mr-1 mt-1"><div class="flex items-center rounded-full bg-green-400/10 px-3 py-1 text-xs font-light leading-1 text-green-500">SQL</div></li>
+                                                <li class="mr-1 mt-1"><div class="flex items-center rounded-full bg-green-400/10 px-3 py-1 text-xs font-light leading-1 text-green-500">Statistics</div></li>
+                                                <li class="mr-1 mt-1"><div class="flex items-center rounded-full bg-green-400/10 px-3 py-1 text-xs font-light leading-1 text-green-500">Gitlab</div></li>
+                                                <li class="mr-1 mt-1"><div class="flex items-center rounded-full bg-green-400/10 px-3 py-1 text-xs font-light leading-1 text-green-500">Data Engineering</div></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- Timeline Item: Software Engineer · ReSource Pro -->
+                                    <div class="flex items-start relative z-10">
+                                        <div class="timeline-dot"></div>
+                                        <div class="p-4 transition-all duration-300 ease-in-out
+                                                    hover:bg-green-400/10 hover:-translate-y-0.5
+                                                    rounded-lg flex-grow ml-6">
+                                            <p class="font-medium text-xs text-slate-300 font-mono uppercase">
+                                            Apr 2017 - Sep 2019
+                                            </p>
+                                            <a href="https://resourcepro.com/" target="_blank">
+                                                <span class="font-bold text-slate-400 hover:text-green-400 font-mono uppercase">
+                                                    Software Engineer @ ReSource Pro
+                                                </span>
+                                            </a>
+                                            <ul class="mt-2 mb-3 text-justify justify-self-stretch text-sm list-disc pl-4 font-mono">
+                                                <li class="mb-1">
+                                                    <span class="text-green-400">Key developer in 5+ projects</span> creating transformative software solutions that <span class="text-green-400">automated commercial insurance processes</span> (new business, renewals, account management), saving 70-90% of time for account managers and service representatives.
+                                                </li>
+                                                <li class="mb-1">
+                                                    <span class="text-green-400">Facilitated seamless collaboration</span> by effectively bridging communication between US-based stakeholders and overseas development teams in Bangalore, India.
+                                                </li>
+                                                <li class="mb-1">
+                                                    <span class="text-green-400">Mentored a Junior UI Developern</span> in Bangalore, India; providing technical guidance that enhanced the quality of front-end design across multiple projects.
+                                                </li>
+                                            </ul>
+                                            <ul class="mt-3 flex flex-wrap uppercase font-light font-mono gap-1 mb-3" aria-label="tech used">
+                                                <li class="mr-1 mt-1"><div class="flex items-center rounded-full bg-green-400/10 px-3 py-1 text-xs font-light leading-1 text-green-500">ASP.Net Mvc 5</div></li>
+                                                <li class="mr-1 mt-1"><div class="flex items-center rounded-full bg-green-400/10 px-3 py-1 text-xs font-light leading-1 text-green-500">C#</div></li>
+                                                <li class="mr-1 mt-1"><div class="flex items-center rounded-full bg-green-400/10 px-3 py-1 text-xs font-light leading-1 text-green-500">HTML</div></li>
+                                                <li class="mr-1 mt-1"><div class="flex items-center rounded-full bg-green-400/10 px-3 py-1 text-xs font-light leading-1 text-green-500">CSS</div></li>
+                                                <li class="mr-1 mt-1"><div class="flex items-center rounded-full bg-green-400/10 px-3 py-1 text-xs font-light leading-1 text-green-500">Bootstrap</div></li>
+                                                <li class="mr-1 mt-1"><div class="flex items-center rounded-full bg-green-400/10 px-3 py-1 text-xs font-light leading-1 text-green-500">javascript</div></li>
+                                                <li class="mr-1 mt-1"><div class="flex items-center rounded-full bg-green-400/10 px-3 py-1 text-xs font-light leading-1 text-green-500">jquery</div></li>
+                                                <li class="mr-1 mt-1"><div class="flex items-center rounded-full bg-green-400/10 px-3 py-1 text-xs font-light leading-1 text-green-500">SQL</div></li>
+                                                <li class="mr-1 mt-1"><div class="flex items-center rounded-full bg-green-400/10 px-3 py-1 text-xs font-light leading-1 text-green-500">Salesforce Dev</div></li>
+                                                <li class="mr-1 mt-1"><div class="flex items-center rounded-full bg-green-400/10 px-3 py-1 text-xs font-light leading-1 text-green-500">Azure ML</div></li>
+                                                <li class="mr-1 mt-1"><div class="flex items-center rounded-full bg-green-400/10 px-3 py-1 text-xs font-light leading-1 text-green-500">Bitbucket</div></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- Timeline Item: Teaching Assistant -->
+                                    <div class="flex items-start relative z-10">
+                                        <div class="timeline-dot"></div>
+                                        <div class="p-4 transition-all duration-300 ease-in-out
+                                                    hover:bg-green-400/10 hover:-translate-y-0.5
+                                                    rounded-lg flex-grow ml-6">
+                                            <p class="font-medium text-xs text-slate-300 font-mono uppercase">
+                                            Jan 2016 - Dec 2017
+                                            </p>
+                                            <a href="https://computing.unl.edu/" target="_blank">
+                                                <span class="font-bold text-slate-400 hover:text-green-400 font-mono uppercase">
+                                                    Teaching Assistant @ School of Computing, University of Nebraska-Lincoln
+                                                </span>
+                                            </a>
+                                            <ul class="mt-2 mb-3 text-justify justify-self-stretch text-sm list-disc pl-4 font-mono">
+                                                <li class="mb-1">
+                                                    <span class="text-green-400">Provided consistent guidance </span> by holding regular office hours, assisting students with assignments and projects.
+                                                </li>
+                                                <li class="mb-1">
+                                                    <span class="text-green-400">Collaborated with faculty </span> on developing and grading course materials, from lectures to exams.
+                                                </li>
+                                            </ul>
+                                            <ul class="mt-3 ml-4 flex flex-wrap uppercase font-light gap-1 mb-3" aria-label="tech used">
+                                                <li class="mr-1 mt-1"><div class="flex items-center rounded-full bg-green-400/10 px-3 py-1 text-xs font-light leading-1 text-green-500">Spring 2016: CSCE 913</div></li>
+                                                <li class="mr-1 mt-1"><div class="flex items-center rounded-full bg-green-400/10 px-3 py-1 text-xs font-light leading-1 text-green-500">Spring 2016: sCSCE 430/830</div></li>
+                                            </ul>
+                                        
+                                            <ul class="mt-3 ml-4 flex flex-wrap uppercase font-light gap-1 mb-3" aria-label="tech used">
+                                                <li class="mr-1 mt-1"><div class="flex items-center rounded-full bg-green-400/10 px-3 py-1 text-xs font-light leading-1 text-green-500">Fall 2016: CSCE 413/813</div></li>
+                                                <li class="mr-1 mt-1"><div class="flex items-center rounded-full bg-green-400/10 px-3 py-1 text-xs font-light leading-1 text-green-500">Fall 2016: CSCE 470/870</div></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- Timeline Item: Software Engineer Intern · DataBankIMX -->
+                                    <div class="flex items-start relative z-10">
+                                        <div class="timeline-dot"></div>
+                                        <div class="p-4 transition-all duration-300 ease-in-out
+                                                    hover:bg-green-400/10  hover:-translate-y-0.5
+                                                    rounded-lg flex-grow ml-6">
+                                            <h4 class="text-lg font-semibold text-indigo-200">Software Engineer Intern · DataBankIMX</h4>
+                                            <p class="text-sm text-slate-300 font-mono">May 2015 - Dec 2015</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Timeline Item: Data Analyst-Student Worker -->
+                                    <div class="flex items-start relative z-10">
+                                        <div class="timeline-dot"></div>
+                                        <div class="p-4 transition-all duration-300 ease-in-out
+                                                    hover:bg-green-400/10  hover:-translate-y-0.5
+                                                    rounded-lg flex-grow ml-6">
+                                            <h4 class="text-lg font-semibold text-indigo-200">Data Analyst-Student Worker · Dept. of CYFS, University of Nebraska-Lincoln</h4>
+                                            <p class="text-sm text-slate-300 font-mono">Sep 2014 - May 2015</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                             <ol>
-                                <li class="grid grid-cols-1 justify-start md:grid-cols-3 md:gap-4 p-4">
+                                <li class="grid grid-cols-1 justify-start md:grid-cols-3 md:gap-4 p-4 transition-all duration-300 ease-in-out hover:bg-green-400\/10 hover:shadow-xl hover:shadow-slate-900/50 hover:-translate-y-0.5">
                                     <div class="md:col-span-1">
-                                        <span class="font-medium text-xs text-slate-300 uppercase">
+                                        <span class="font-medium text-xs text-slate-300 font-mono uppercase">
                                             Sep 2019-Present
                                         </span>
                                     </div>
                                     <div class="md:col-span-2">
                                         <a href="https://nebraska.edu/" target="_blank">
-                                            <span class="font-bold text-white hover:text-green-400">
-                                                Learning Analyst @ University of Nebraska System
+                                            <span class="font-bold text-green-500 font-mono">
+                                                Learning Analyst
+                                            </span>
+                                            <span class="text-slate-200">@</span>
+                                            <span class="font-bold text-white hover:text-green-400 font-mono">
+                                                University of Nebraska System
                                             </span>
                                         </a>
-                                        <p class="mt-2 justify-self-stretch text-sm">
+                                    <ul class="mt-2 justify-self-stretch text-sm list-disc pl-5">
+                                        <li>
+                                            <span class="font-bold">Drove data-driven decisions</span> by modeling student performance and behavior related data marts and dashboards across 10+ projects.
+                                        </li>
+                                        <li>
+                                            <span class="font-bold">Pioneered the "Course Insights" LTI product</span> as the primary analyst from concept to launch.
+                                        </li>
+                                        <li>
+                                            Recognized with the <span class="font-bold">highest performance rating</span> ("Exceeds Expectations") during the evaluation term (Feb 2022-Feb 2023).
+                                        </li>
+                                        <li>
+                                            <span class="font-bold">Facilitated cross-institutional collaboration</span> through regular presentations to NU System, BTAA, and Unizin peers.
+                                        </li>
+                                    </ul>
+                                        <!-- <p class="mt-2 justify-self-stretch text-sm">
                                                 <span class="font-bold">Drove data-driven decisions</span> by modeling student performance and behavior related data marts and dashboards across 10+ projects. 
                                                 
                                                 <span class="font-bold">Pioneered the "Course Insights" LTI product</span> as the primary analyst from concept to launch.
@@ -128,16 +294,15 @@
                                                 Recognized with the <span class="font-bold">highest performance rating</span> ("Exceeds Expectations") during the evaluation term (Feb 2022-Feb 2023).
                                              
                                                 <span class="font-bold">Facilitated cross-institutional collaboration</span> through regular presentations to NU System, BTAA, and Unizin peers.                                    
-                                        </p>
-                                        <ul class="mt-3 flex flex-wrap uppercase font-light gap-1 mb-3" aria-label="tech used">
-                                            <li class="mr-1 mt-1 font-bold"><div class="flex items-center rounded-full bg-green-400/10 px-3 py-1 text-xs font-light leading-1 text-green-300">Tableau</div></li>
-                                            <li class="mr-1 mt-1"><div class="flex items-center rounded-full bg-green-400/10 px-3 py-1 text-xs font-light leading-1 text-green-300">R programming</div></li>
-                                            <li class="mr-1 mt-1"><div class="flex items-center rounded-full bg-green-400/10 px-3 py-1 text-xs font-light leading-1 text-green-300">Python</div></li>
-                                            <li class="mr-1 mt-1"><div class="flex items-center rounded-full bg-green-400/10 px-3 py-1 text-xs font-light leading-1 text-green-300">SQL</div></li>
-                                            <li class="mr-1 mt-1"><div class="flex items-center rounded-full bg-green-400/10 px-3 py-1 text-xs font-light leading-1 text-green-300">Statistics</div></li>
-                                            <li class="mr-1 mt-1"><div class="flex items-center rounded-full bg-green-400/10 px-3 py-1 text-xs font-light leading-1 text-green-300">Gitlab</div></li>
-                                            <li class="mr-1 mt-1"><div class="flex items-center rounded-full bg-green-400/10 px-3 py-1 text-xs font-light leading-1 text-green-300">Data Engineering</div></li>
-
+                                        </p> -->
+                                        <ul class="mt-3 flex flex-wrap uppercase font-light font-mono gap-1 mb-3" aria-label="tech used">
+                                            <li class="mr-1 mt-1 font-bold"><div class="flex items-center rounded-full bg-green-400/10 px-3 py-1 text-xs font-light leading-1 text-green-500">Tableau</div></li>
+                                            <li class="mr-1 mt-1"><div class="flex items-center rounded-full bg-green-400/10 px-3 py-1 text-xs font-light leading-1 text-green-500">R programming</div></li>
+                                            <li class="mr-1 mt-1"><div class="flex items-center rounded-full bg-green-400/10 px-3 py-1 text-xs font-light leading-1 text-green-500">Python</div></li>
+                                            <li class="mr-1 mt-1"><div class="flex items-center rounded-full bg-green-400/10 px-3 py-1 text-xs font-light leading-1 text-green-500">SQL</div></li>
+                                            <li class="mr-1 mt-1"><div class="flex items-center rounded-full bg-green-400/10 px-3 py-1 text-xs font-light leading-1 text-green-500">Statistics</div></li>
+                                            <li class="mr-1 mt-1"><div class="flex items-center rounded-full bg-green-400/10 px-3 py-1 text-xs font-light leading-1 text-green-500">Gitlab</div></li>
+                                            <li class="mr-1 mt-1"><div class="flex items-center rounded-full bg-green-400/10 px-3 py-1 text-xs font-light leading-1 text-green-500">Data Engineering</div></li>
                                         </ul>
                                     </div>
                                 </li>
@@ -160,7 +325,7 @@
                                             2. Collaborated extensively with peers in overseas development team in <span class="font-bold text-indigo-400"> Bangalore, India</span>, bridging the gap effectively between US-based stakeholders and them, and vice-versa.<br class="mb-1">
                                             3. Mentored and <span class="font-bold text-indigo-400">provided technical guidance</span> to a Junior UI Developer (located in Bangalore, India) which made them deliver quality front-end design for couple of projects.
                                         </p>
-                                        <ul class="mt-3 flex flex-wrap uppercase font-light gap-1 mb-3" aria-label="tech used">
+                                        <ul class="mt-3 flex flex-wrap uppercase font-light font-mono gap-1 mb-3" aria-label="tech used">
                                             <li class="mr-1 mt-1"><div class="flex items-center rounded-full bg-green-400/10 px-3 py-1 text-xs font-light leading-1 text-green-500">ASP.Net Mvc 5</div></li>
                                             <li class="mr-1 mt-1"><div class="flex items-center rounded-full bg-green-400/10 px-3 py-1 text-xs font-light leading-1 text-green-500">C#</div></li>
                                             <li class="mr-1 mt-1"><div class="flex items-center rounded-full bg-green-400/10 px-3 py-1 text-xs font-light leading-1 text-green-500">HTML</div></li>
@@ -277,12 +442,12 @@
                         </div>
                     </section>
                     <section id = "code_is_not_all" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24" aria-label="aboutme">
-                        <div class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-indigo-950/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0s">
-                            <h2 class="text-slate-400 uppercase font-bold text-sm"> 
-                                CODE != ALL
+                        <div class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-black/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0s">
+                            <h2 class="text-white uppercase font-bold text-sm"> 
+                                CODE <span class="text-green-400">!=</span> ALL
                             </h2>
                         </div>
-                        <p class="flex shrink-0  text-indigo-200 font-medium">
+                        <p class="flex shrink-0  text-white font-medium">
                             Professionally, I love exploring data and crafting insightful data-driven dashboards for people.
                             <br class="mt-5"> My values drive me to advocate for animal rights, environment, and climate action, cultivate a healthy and fit lifestyle, and make conscious choices that promote kindness and well-being.
                             <br class="mt-5"> I approach my passions with unwavering conviction, constantly seeking to learn and grow in these areas.
@@ -292,9 +457,9 @@
                         </span>
                     </section>
                     <section id = "what_matters" class="mb-50 mt-80 scroll-mt-30 md:mb-24 lg:mb-36 lg:scroll-mt-24" aria-label="aboutme">
-                        <div class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-indigo-950/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0s">
-                            <h2 class="text-indigo-400 uppercase font-bold text-sm"> 
-                                Who am I, really?
+                        <div class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-black/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0s">
+                            <h2 class="text-white uppercase font-bold text-sm"> 
+                                WHAT <span class="text-green-400">MATTERS</span>THE <span class="text-green-400">MOST</span>..
                             </h2>
                         </div>
                         <p class="flex shrink-0 text-sm font-medium leading-relaxed text-indigo-300">

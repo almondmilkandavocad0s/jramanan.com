@@ -946,6 +946,10 @@ video {
 .p-4 {
   padding: 1rem;
 }
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
 
 .px-3 {
   padding-left: 0.75rem;
@@ -997,6 +1001,9 @@ video {
 
 .text-center {
   text-align: center;
+}
+.text-justify {
+  text-align: justify;
 }
 
 .font-mono {
@@ -1133,6 +1140,29 @@ video {
   color: rgb(203 213 225 / var(--tw-text-opacity));
 }
 
+/* Styles for the timeline dots and lines */
+.timeline-dot {
+    width: 12px;
+    height: 12px;
+    background-color: #00ff2a; /* Green dot */
+    border-radius: 50%;
+    flex-shrink: 0; /* Prevent dot from shrinking */
+    margin-top: 0.5rem; /* Align dot vertically with the text */
+    position: relative;
+    z-index: 20; /* Ensure dot is above the line */
+}
+
+.timeline-vertical-line {
+    position: absolute;
+    left: 6px; /* Align with the center of the dot */
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: rgba(0, 255, 81, 0.455); /* Slightly transparent green line */
+    z-index: 10; /* Ensure line is behind dots */
+}
+
+
 .opacity-0 {
   opacity: 0;
 }
@@ -1165,6 +1195,28 @@ video {
 
 .duration-300 {
   transition-duration: 300ms;
+}
+.ease-in-out {
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* Hover background color with opacity */
+.hover\:bg-green-400\/10:hover {
+    background-color: rgba(74, 222, 128, 0.1); /* Equivalent to green-400 with 10% opacity */
+}
+
+/* Hover shadow */
+.hover\:shadow-xl:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); /* Tailwind's default shadow-xl */
+}
+
+/* Hover shadow color with opacity */
+.hover\:shadow-slate-900\/50:hover {
+    box-shadow: 0 20px 25px -5px rgba(15, 23, 42, 0.5), 0 10px 10px -5px rgba(15, 23, 42, 0.5); /* Replaces default shadow-xl color with slate-900 at 50% opacity */
+}
+
+/* Hover translate effect */
+.hover\:-translate-y-0\.5:hover {
+    transform: translateY(-0.125rem); /* Equivalent to -translate-y-0.5 (2px) */
 }
 
 .hover\:border-green-300:hover {
@@ -1258,6 +1310,9 @@ video {
   --tw-text-opacity: 1;
   color: rgb(165 243 252 / var(--tw-text-opacity));
 }
+.shadow-xl { 
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); 
+}
 
 /* Custom styles for the shine effect */
 .shine-effect {
@@ -1285,11 +1340,11 @@ video {
     background: #1a1a1a; /* Darker track */
 }
 ::-webkit-scrollbar-thumb {
-    background: #00ff91; /* Vibrant green thumb */
+    background: #00ff15; /* Vibrant green thumb */
     border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: #00e682; /* Slightly darker on hover */
+    background: #00cc22; /* Slightly darker on hover */
 }
 
 @media (prefers-reduced-motion: reduce) {
