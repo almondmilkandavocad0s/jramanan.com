@@ -759,6 +759,10 @@ video {
   justify-content: center;
 }
 
+.justify-between {
+  justify-content: space-between;
+}
+
 .gap-1 {
   gap: 0.25rem;
 }
@@ -935,6 +939,10 @@ video {
   --tw-gradient-to: #111827 var(--tw-gradient-to-position);
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .skill-set-link {
   font-weight: 600; /* Semi-bold */
   text-decoration: none; /* No underline */
@@ -1031,6 +1039,10 @@ video {
   text-align: justify;
 }
 
+.text-left {
+  text-align: left;
+}
+
 .font-mono {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
@@ -1041,6 +1053,10 @@ video {
 
 .font-serif {
   font-family: ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
+}
+
+.float-left {
+  float: left;
 }
 
 .text-4xl {
