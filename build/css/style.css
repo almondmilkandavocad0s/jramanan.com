@@ -576,6 +576,11 @@ video {
   z-index: 20;
 }
 
+.mx-1{
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
 .m-10 {
   margin: 2.5rem;
 }
@@ -697,6 +702,11 @@ video {
 .w-8 {
   width: 2rem;
 }
+
+.w-48 {
+  width: 12rem;
+}
+
 
 .w-96 {
   width: 24rem;
@@ -964,6 +974,10 @@ video {
 
 .skill-set-link:hover svg {
   transform: translateX(3px); /* Slight movement to the right on hover */
+}
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .object-contain {
