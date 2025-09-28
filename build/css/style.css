@@ -548,6 +548,8 @@ video {
   height: auto;
 }
 
+
+
 /* Make elements with the HTML hidden attribute stay hidden by default */
 
 [hidden]:where(:not([hidden="until-found"])) {
@@ -572,6 +574,11 @@ video {
 
 .z-20 {
   z-index: 20;
+}
+
+.mx-1{
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
 }
 
 .m-10 {
@@ -696,6 +703,11 @@ video {
   width: 2rem;
 }
 
+.w-48 {
+  width: 12rem;
+}
+
+
 .w-96 {
   width: 24rem;
 }
@@ -757,6 +769,10 @@ video {
   justify-content: center;
 }
 
+.justify-between {
+  justify-content: space-between;
+}
+
 .gap-1 {
   gap: 0.25rem;
 }
@@ -799,6 +815,10 @@ video {
 .bg-green-400\/10 {
   background-color: rgb(74 222 128 / 0.1);
 }
+.bg-pink-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(219, 39, 119 / var(--tw-bg-opacity));
+}
 
 .bg-indigo-500 {
   --tw-bg-opacity: 1;
@@ -822,6 +842,10 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
 }
+.bg-slate-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+}
 
 .bg-cyan-500 {
   --tw-bg-opacity: 1;
@@ -831,6 +855,11 @@ video {
 .bg-cyan-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(34 211 238 / var(--tw-bg-opacity));
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-tr {
@@ -920,6 +949,37 @@ video {
   --tw-gradient-to: #111827 var(--tw-gradient-to-position);
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.skill-set-link {
+  font-weight: 600; /* Semi-bold */
+  text-decoration: none; /* No underline */
+  display: inline-flex; /* Allows text and SVG to sit side-by-side */
+  align-items: center; /* Vertically aligns text and SVG */
+  transition: color 0.3s ease; /* Smooth transition for hover */
+}
+
+.skill-set-link:hover {
+  text-decoration: underline;
+}
+
+/* Styling for the SVG arrow */
+.skill-set-link svg {
+  margin-left: 8px; /* Space between text and arrow */
+  vertical-align: middle; /* Align arrow with text baseline */
+  transition: transform 0.3s ease; /* Smooth transition for hover */
+}
+
+.skill-set-link:hover svg {
+  transform: translateX(3px); /* Slight movement to the right on hover */
+}
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .object-contain {
   -o-object-fit: contain;
      object-fit: contain;
@@ -932,6 +992,10 @@ video {
 
 .p-4 {
   padding: 1rem;
+}
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 
 .px-3 {
@@ -985,6 +1049,13 @@ video {
 .text-center {
   text-align: center;
 }
+.text-justify {
+  text-align: justify;
+}
+
+.text-left {
+  text-align: left;
+}
 
 .font-mono {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -992,6 +1063,14 @@ video {
 
 .font-sans {
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.font-serif {
+  font-family: ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
+}
+
+.float-left {
+  float: left;
 }
 
 .text-4xl {
@@ -1056,6 +1135,14 @@ video {
 .tracking-widest {
   letter-spacing: 0.1em;
 }
+.text-green-200 {
+  --tw-text-opacity: 1;
+  color: rgb(87, 247, 208 / var(--tw-text-opacity));
+}
+.text-green-300 {
+  --tw-text-opacity: 1;
+  color: rgb(134 239 172 / var(--tw-text-opacity));
+}
 
 .text-green-400 {
   --tw-text-opacity: 1;
@@ -1071,32 +1158,14 @@ video {
   --tw-text-opacity: 1;
   color: rgb(22 163 74 / var(--tw-text-opacity));
 }
-
-.text-indigo-200 {
+.text-slate-50 {
   --tw-text-opacity: 1;
-  color: rgb(199 210 254 / var(--tw-text-opacity));
+  color: rgb(248 250 252 / var(--tw-text-opacity, 1));
 }
-
-.text-indigo-300 {
+.text-slate-100 {
   --tw-text-opacity: 1;
-  color: rgb(165 180 252 / var(--tw-text-opacity));
+  color: rgb(241 245 249 / var(--tw-text-opacity, 1));
 }
-
-.text-indigo-400 {
-  --tw-text-opacity: 1;
-  color: rgb(129 140 248 / var(--tw-text-opacity));
-}
-
-.text-indigo-500 {
-  --tw-text-opacity: 1;
-  color: rgb(99 102 241 / var(--tw-text-opacity));
-}
-
-.text-indigo-600 {
-  --tw-text-opacity: 1;
-  color: rgb(79 70 229 / var(--tw-text-opacity));
-}
-
 .text-slate-200 {
   --tw-text-opacity: 1;
   color: rgb(226 232 240 / var(--tw-text-opacity));
@@ -1107,6 +1176,10 @@ video {
   color: rgb(148 163 184 / var(--tw-text-opacity));
 }
 
+.text-white	{
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+
+}
 .text-emerald-400 {
   --tw-text-opacity: 1;
   color: rgb(52 211 153 / var(--tw-text-opacity));
@@ -1121,6 +1194,29 @@ video {
   --tw-text-opacity: 1;
   color: rgb(203 213 225 / var(--tw-text-opacity));
 }
+
+/* Styles for the timeline dots and lines */
+.timeline-dot {
+    width: 12px;
+    height: 12px;
+    background-color: #00ff2a; /* Green dot */
+    border-radius: 50%;
+    flex-shrink: 0; /* Prevent dot from shrinking */
+    margin-top: 0.5rem; /* Align dot vertically with the text */
+    position: relative;
+    z-index: 20; /* Ensure dot is above the line */
+}
+
+.timeline-vertical-line {
+    position: absolute;
+    left: 6px; /* Align with the center of the dot */
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: rgba(0, 255, 81, 0.455); /* Slightly transparent green line */
+    z-index: 10; /* Ensure line is behind dots */
+}
+
 
 .opacity-0 {
   opacity: 0;
@@ -1154,6 +1250,28 @@ video {
 
 .duration-300 {
   transition-duration: 300ms;
+}
+.ease-in-out {
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* Hover background color with opacity */
+.hover\:bg-green-400\/10:hover {
+    background-color: rgba(74, 222, 128, 0.1); /* Equivalent to green-400 with 10% opacity */
+}
+
+/* Hover shadow */
+.hover\:shadow-xl:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); /* Tailwind's default shadow-xl */
+}
+
+/* Hover shadow color with opacity */
+.hover\:shadow-slate-900\/50:hover {
+    box-shadow: 0 20px 25px -5px rgba(15, 23, 42, 0.5), 0 10px 10px -5px rgba(15, 23, 42, 0.5); /* Replaces default shadow-xl color with slate-900 at 50% opacity */
+}
+
+/* Hover translate effect */
+.hover\:-translate-y-0\.5:hover {
+    transform: translateY(-0.125rem); /* Equivalent to -translate-y-0.5 (2px) */
 }
 
 .hover\:border-green-300:hover {
@@ -1246,6 +1364,42 @@ video {
 .group:focus-visible .group-focus-visible\:text-cyan-200 {
   --tw-text-opacity: 1;
   color: rgb(165 243 252 / var(--tw-text-opacity));
+}
+.shadow-xl { 
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); 
+}
+
+/* Custom styles for the shine effect */
+.shine-effect {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1000px; /* Size of the shine */
+    height: 800px; /* Size of the shine */
+    /* Subtle green/cyan hue for the mouse shine */
+    background: radial-gradient(circle at center, rgba(15, 145, 0, 0.336) 0%, transparent 80%);
+    border-radius: 100%;
+    pointer-events: none; /* Allow interaction with elements beneath */
+    transform: translate(-50%, -50%); /* Center the shine on the cursor */
+    transition: opacity 0.3s ease-out; /* Smooth fade for opacity */
+    opacity: 0; /* Hidden by default */
+    z-index: 9999; /* Ensure it's on top */
+    filter: blur(200px); /* Soften the edges */
+}
+
+/* Custom scrollbar for better aesthetics on dark theme */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #1a1a1a; /* Darker track */
+}
+::-webkit-scrollbar-thumb {
+    background: #00ff15; /* Vibrant green thumb */
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #00cc22; /* Slightly darker on hover */
 }
 
 @media (prefers-reduced-motion: reduce) {
