@@ -643,6 +643,10 @@ video {
   margin-top: 0.25rem;
 }
 
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
 .mt-10 {
   margin-top: 2.5rem;
 }
@@ -1178,7 +1182,10 @@ video {
 
 .text-white	{
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-
+}
+.text-grey-300 {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity));
 }
 .text-emerald-400 {
   --tw-text-opacity: 1;
