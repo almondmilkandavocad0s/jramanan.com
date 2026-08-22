@@ -85,8 +85,33 @@ nav {
   margin-bottom: 4rem;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   column-gap: 1.5rem;
   row-gap: 0.5rem;
+}
+
+nav a {
+  color: var(--accent);
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 2px;
+  transition: color 0.2s ease, background-color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  text-decoration-color: var(--muted);
+}
+
+nav a:active,
+nav a:focus-visible {
+  background-color: var(--accent-soft);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  text-decoration-color: color-mix(in srgb, var(--accent) 40%, transparent);
 }
 
 /* links */
