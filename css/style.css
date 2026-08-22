@@ -231,6 +231,54 @@ h2 {
   outline-offset: 2px;
 }
 
+/* photo stack */
+.photo-stack-section {
+  margin-bottom: 5rem;
+}
+
+.photo-stack {
+  position: relative;
+  width: min(320px, 80vw);
+  margin: 0 auto;
+  aspect-ratio: 3 / 4;
+}
+
+.photo-stack img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 0.75rem;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  opacity: 0;
+  transform: scale(0.96) rotate(var(--rotation, 0deg));
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  pointer-events: none;
+}
+
+.dark .photo-stack img {
+  background-color: #1e1e1e;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.photo-stack img:nth-child(odd) {
+  --rotation: -2deg;
+}
+
+.photo-stack img:nth-child(even) {
+  --rotation: 2deg;
+}
+
+.photo-stack img.active {
+  opacity: 1;
+  transform: scale(1) rotate(var(--rotation, 0deg));
+  z-index: 1;
+  pointer-events: auto;
+}
+
 /* footer */
 footer .links {
   display: flex;
