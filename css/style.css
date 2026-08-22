@@ -1,0 +1,222 @@
+/* minimal reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #f9f9f7;
+  --text: #1a1a1a;
+  --accent: #2d6a4f;
+  --accent-soft: rgba(45, 106, 79, 0.1);
+  --rule: rgba(26, 26, 26, 0.1);
+  --muted: rgba(26, 26, 26, 0.5);
+  --focus: #2d6a4f;
+}
+
+.dark {
+  --bg: #121212;
+  --text: #e5e5e5;
+  --accent: #4a9d76;
+  --accent-soft: rgba(74, 157, 118, 0.1);
+  --rule: rgba(229, 229, 229, 0.1);
+  --muted: rgba(229, 229, 229, 0.5);
+  --focus: #4a9d76;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+main {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 6rem 1.5rem;
+}
+
+@media (min-width: 768px) {
+  main {
+    padding: 8rem 1.5rem;
+  }
+}
+
+/* theme toggle */
+#theme-toggle {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 50;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
+  background: transparent;
+  color: var(--accent);
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+#theme-toggle:hover {
+  background-color: var(--accent-soft);
+}
+
+#theme-toggle:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+/* navigation */
+nav {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.875rem;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 1.5rem;
+  row-gap: 0.5rem;
+}
+
+/* links */
+a {
+  color: inherit;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  text-decoration-color: color-mix(in srgb, var(--accent) 40%, transparent);
+  transition: text-decoration-color 0.2s ease;
+}
+
+a:hover {
+  text-decoration-color: var(--accent);
+}
+
+a:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* horizontal rules */
+hr {
+  border: 0;
+  border-top: 1px solid var(--rule);
+  margin-bottom: 4rem;
+}
+
+/* sections */
+section {
+  margin-bottom: 5rem;
+  scroll-margin-top: 6rem;
+}
+
+/* intro label */
+.intro-label {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  color: var(--accent);
+}
+
+/* headings */
+h1 {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 1.875rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.25rem;
+  }
+}
+
+h2 {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.875rem;
+  margin-bottom: 2rem;
+  color: var(--accent);
+}
+
+/* standout line */
+.standout {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .standout {
+    font-size: 1.875rem;
+  }
+}
+
+/* body text blocks */
+.content {
+  font-size: 1rem;
+  line-height: 1.625;
+}
+
+.content > * + * {
+  margin-top: 1rem;
+}
+
+.content ul {
+  list-style-type: disc;
+  list-style-position: inside;
+  margin-left: 0.25rem;
+}
+
+.content ul li + li {
+  margin-top: 0.25rem;
+}
+
+/* resume button */
+.btn-outline {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.875rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.btn-outline:hover {
+  background-color: var(--accent-soft);
+}
+
+.btn-outline:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+/* footer */
+footer .links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+footer p {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
