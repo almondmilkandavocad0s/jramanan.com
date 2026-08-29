@@ -8,9 +8,11 @@
 </head>
 <body>
 
-    <button id="theme-toggle" aria-label="Toggle theme">
-        auto
-    </button>
+    <header class="site-header">
+        <button id="theme-toggle" aria-label="Toggle theme">
+            auto
+        </button>
+    </header>
 
     <main>
 
@@ -22,14 +24,16 @@
         <hr>
 
         <section id="hi">
-            <p class="intro-label">👋🏽 hi, i'm</p>
+            <p class="intro-label">HELLO.</p>
             <h1>jyotsna ramanan.</h1>
 
             <div class="content">
-                <p>i work in a senior/lead capacity in learning analytics — somewhere between data, code, and helping people make sense of how students are learning and engaging in classrooms at the <a href="https://nebraska.edu/" target="_blank" rel="noopener noreferrer">NU System</a>.</p>
-                <p>before this, i built things end-to-end as a full-stack developer for <a href="https://www.resourcepro.com/" target="_blank" rel="noopener noreferrer">ReSource Pro</a>'s Innovation Lab.</p>
-                <p>i have a master's in computer science from the <a href="https://www.unl.edu/" target="_blank" rel="noopener noreferrer">university of nebraska-lincoln</a> (2016).</p>
-                <p>i am many things at many times to many people. right now, this is one of them.</p>
+                <p>i work in a senior/lead capacity in learning analytics <span class="dash-tip" tabindex="0" aria-describedby="em-dash-note">—<span class="dash-tip-bubble" id="em-dash-note" role="tooltip">yes, i used ai to polish this passage — and chose to keep the giveaway em-dash. no regrets.</span></span> somewhere between data, code, and helping people make sense of how students are learning and engaging in classrooms at the <a href="https://nebraska.edu/" target="_blank" rel="noopener noreferrer" class="small-link">NU System</a>.</p>
+                <p>before this, i built things end-to-end as a full-stack Software Engineer @ <a href="https://www.resourcepro.com/" target="_blank" rel="noopener noreferrer" class="small-link">ReSource Pro</a>'s Innovation Lab.</p>
+                <p>i have a master's in computer science from the <a href="https://www.unl.edu/" target="_blank" rel="noopener noreferrer" class="small-link"> University of Nebraska-Lincoln</a> (2016), where alongside my studies i was a part-time teaching assistant for 400/800 level courses in databases, computer architecture, and computer graphics. <br>
+                    
+                    i was a software engineer intern @ <a href="https://www.databankimx.com/" target="_blank" rel="noopener noreferrer" class="small-link">DataBank</a>, and before that, a student worker running data analysis for the researchers at the <a href="https://cehs.unl.edu/cyaf/early-childhood-education/" target="_blank" rel="noopener noreferrer" class="small-link">department of CYAF at CEHS, UNL</a>.
+                </p>
             </div>
         </section>
 
@@ -40,16 +44,16 @@
 
             <div class="care-layout">
                 <div class="care-text">
-                    <p class="standout">the animals.</p>
+                    <p class="standout">the non-human animals.</p>
 
                     <div class="content">
-                        <p>i am not a speciesist. i reject the idea that humans are superior to other animals, and that shapes how i eat, what i support, and how i try to show up in the world.</p>
+                        <p>i am not a speciesist. i reject the idea that humans are superior to other animals, and that some animals are better than other animals. that shapes how i eat, what i support, and how i try to show up in the world.</p>
                         <p>i went vegan in 2021, and i'm still unlearning and relearning things.</p>
-                        <p>this is always on my mind:</p>
+                        <p>what's always on my mind:</p>
                         <ul>
-                            <li class="small-link"><a href="https://animalclock.org/" target="_blank" rel="noopener noreferrer">this being normalized like it's nothing</a></li>
+                            <li class="small-link"><a href="https://animalclock.org/" target="_blank" rel="noopener noreferrer">this</a> being normalized like it's nothing</li> 
                         </ul>
-                        <p>i also built a small tool for people like me, so we can spend less energy debating the debaters and more time actually being part of the solution:</p>
+                        <p>i also built a small tool for people like me, so we can spend less energy debating the debaters who bring random claims like "plants feel pain," etc., and spend more time being part of the solution:</p>
                         <ul>
                             <li class="small-link"><a href="https://free-fauna.streamlit.app/" target="_blank" rel="noopener noreferrer">try free fauna</a></li>
                         </ul>
@@ -89,6 +93,7 @@
 
     <script src="./js/theme.js"></script>
     <script src="./js/photo-stack.js"></script>
+    <script src="./js/dash-tip.js"></script>
 
 </body>
 </html>
