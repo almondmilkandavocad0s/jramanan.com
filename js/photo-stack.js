@@ -14,5 +14,7 @@
     photos[currentIndex].classList.add('active');
   }
 
-  setInterval(showNext, 7000);
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    setInterval(showNext, 7000);
+  }
 })();
